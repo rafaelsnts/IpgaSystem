@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
+using DevExpress.Xpo.DB;
+using IpgaSystem.XPO.IpgaDB;
 
 namespace IpgaSystem
 {
@@ -18,6 +20,9 @@ namespace IpgaSystem
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+
+            ConnectionHelper.Connect(AutoCreateOption.None);
+
             Application.Run(new form_MenuPrincipal());
         }
     }

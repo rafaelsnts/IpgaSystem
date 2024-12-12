@@ -41,6 +41,7 @@
     <Reference Include="DevExpress.Drawing.v24.1, Version=24.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Printing.v24.1.Core, Version=24.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Utils.v24.1, Version=24.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v24.1, Version=24.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraBars.v24.1, Version=24.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraEditors.v24.1, Version=24.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraGrid.v24.1, Version=24.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
@@ -132,6 +133,7 @@
       <HintPath>..\packages\System.ComponentModel.Annotations.4.7.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
     </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Common, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Data.Common.4.3.0\lib\net451\System.Data.Common.dll</HintPath>
@@ -212,17 +214,29 @@
     <Compile Include="Forms\Membros\form_CadastrarMembros.Designer.cs">
       <DependentUpon>form_CadastrarMembros.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Membros\form_EditarMembros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Membros\form_EditarMembros.Designer.cs">
+      <DependentUpon>form_EditarMembros.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Membros\form_ExibirMembros.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Membros\form_ExibirMembros.Designer.cs">
       <DependentUpon>form_ExibirMembros.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Ministérios\form_CadastrarMinisterio.cs">
+    <Compile Include="Forms\Ministérios\form_CadastrarMinisterios.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Ministérios\form_CadastrarMinisterio.Designer.cs">
-      <DependentUpon>form_CadastrarMinisterio.cs</DependentUpon>
+    <Compile Include="Forms\Ministérios\form_CadastrarMinisterios.Designer.cs">
+      <DependentUpon>form_CadastrarMinisterios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Ministérios\form_EditarMinisterios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Ministérios\form_EditarMinisterios.Designer.cs">
+      <DependentUpon>form_EditarMinisterios.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Ministérios\form_ExibirMinisterios.cs">
       <SubType>Form</SubType>
@@ -241,6 +255,43 @@
     <Compile Include="Models\tb_usuarios.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="XPO\IpgaSystemCode\ConnectionHelper.cs" />
+    <Compile Include="XPO\IpgaSystemCode\tb_cargosXPO.cs" />
+    <Compile Include="XPO\IpgaSystemCode\tb_cargosXPO.Designer.cs">
+      <DependentUpon>tb_cargosXPO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XPO\IpgaSystemCode\tb_despesasXPO.cs" />
+    <Compile Include="XPO\IpgaSystemCode\tb_despesasXPO.Designer.cs">
+      <DependentUpon>tb_despesasXPO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XPO\IpgaSystemCode\tb_dizimosXPO.cs" />
+    <Compile Include="XPO\IpgaSystemCode\tb_dizimosXPO.Designer.cs">
+      <DependentUpon>tb_dizimosXPO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XPO\IpgaSystemCode\tb_eventosXPO.cs" />
+    <Compile Include="XPO\IpgaSystemCode\tb_eventosXPO.Designer.cs">
+      <DependentUpon>tb_eventosXPO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XPO\IpgaSystemCode\tb_membrosXPO.cs" />
+    <Compile Include="XPO\IpgaSystemCode\tb_membrosXPO.Designer.cs">
+      <DependentUpon>tb_membrosXPO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XPO\IpgaSystemCode\tb_ministeriosXPO.cs" />
+    <Compile Include="XPO\IpgaSystemCode\tb_ministeriosXPO.Designer.cs">
+      <DependentUpon>tb_ministeriosXPO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XPO\IpgaSystemCode\tb_nivel_acessoXPO.cs" />
+    <Compile Include="XPO\IpgaSystemCode\tb_nivel_acessoXPO.Designer.cs">
+      <DependentUpon>tb_nivel_acessoXPO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XPO\IpgaSystemCode\tb_ofertasXPO.cs" />
+    <Compile Include="XPO\IpgaSystemCode\tb_ofertasXPO.Designer.cs">
+      <DependentUpon>tb_ofertasXPO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XPO\IpgaSystemCode\tb_usuariosXPO.cs" />
+    <Compile Include="XPO\IpgaSystemCode\tb_usuariosXPO.Designer.cs">
+      <DependentUpon>tb_usuariosXPO.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Forms\1 - Principal\form_MenuPrincipal.resx">
       <DependentUpon>form_MenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
@@ -262,11 +313,17 @@
     <EmbeddedResource Include="Forms\Membros\form_CadastrarMembros.resx">
       <DependentUpon>form_CadastrarMembros.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Membros\form_EditarMembros.resx">
+      <DependentUpon>form_EditarMembros.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Membros\form_ExibirMembros.resx">
       <DependentUpon>form_ExibirMembros.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Ministérios\form_CadastrarMinisterio.resx">
-      <DependentUpon>form_CadastrarMinisterio.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Ministérios\form_CadastrarMinisterios.resx">
+      <DependentUpon>form_CadastrarMinisterios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Ministérios\form_EditarMinisterios.resx">
+      <DependentUpon>form_EditarMinisterios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Ministérios\form_ExibirMinisterios.resx">
       <DependentUpon>form_ExibirMinisterios.cs</DependentUpon>
@@ -292,6 +349,10 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="XPO\IpgaSystem.xpo" />
+    <None Include="XPO\IpgaSystem.xpo.diagram">
+      <DependentUpon>IpgaSystem.xpo</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

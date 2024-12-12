@@ -35,10 +35,12 @@
             this.exibirMembrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.financeiroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ministériosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cargosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pnlPrincipal = new DevExpress.XtraEditors.PanelControl();
-            this.exibirCargosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exibirMinistériosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cargosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exibirCargosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pnlPrincipal = new DevExpress.XtraEditors.PanelControl();
+            this.novoCadastroToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.novoCadastroToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pnlPrincipal)).BeginInit();
             this.SuspendLayout();
@@ -76,14 +78,14 @@
             // novoCadastroToolStripMenuItem
             // 
             this.novoCadastroToolStripMenuItem.Name = "novoCadastroToolStripMenuItem";
-            this.novoCadastroToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.novoCadastroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.novoCadastroToolStripMenuItem.Text = "Novo Cadastro";
             this.novoCadastroToolStripMenuItem.Click += new System.EventHandler(this.novoCadastroToolStripMenuItem_Click);
             // 
             // exibirMembrosToolStripMenuItem
             // 
             this.exibirMembrosToolStripMenuItem.Name = "exibirMembrosToolStripMenuItem";
-            this.exibirMembrosToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.exibirMembrosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.exibirMembrosToolStripMenuItem.Text = "Exibir Membros";
             this.exibirMembrosToolStripMenuItem.Click += new System.EventHandler(this.exibirMembrosToolStripMenuItem_Click);
             // 
@@ -96,18 +98,34 @@
             // ministériosToolStripMenuItem
             // 
             this.ministériosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.novoCadastroToolStripMenuItem1,
             this.exibirMinistériosToolStripMenuItem});
             this.ministériosToolStripMenuItem.Name = "ministériosToolStripMenuItem";
             this.ministériosToolStripMenuItem.Size = new System.Drawing.Size(77, 20);
             this.ministériosToolStripMenuItem.Text = "Ministérios";
             // 
+            // exibirMinistériosToolStripMenuItem
+            // 
+            this.exibirMinistériosToolStripMenuItem.Name = "exibirMinistériosToolStripMenuItem";
+            this.exibirMinistériosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exibirMinistériosToolStripMenuItem.Text = "Exibir Ministérios";
+            this.exibirMinistériosToolStripMenuItem.Click += new System.EventHandler(this.exibirMinistériosToolStripMenuItem_Click);
+            // 
             // cargosToolStripMenuItem
             // 
             this.cargosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.novoCadastroToolStripMenuItem2,
             this.exibirCargosToolStripMenuItem});
             this.cargosToolStripMenuItem.Name = "cargosToolStripMenuItem";
             this.cargosToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
             this.cargosToolStripMenuItem.Text = "Cargos";
+            // 
+            // exibirCargosToolStripMenuItem
+            // 
+            this.exibirCargosToolStripMenuItem.Name = "exibirCargosToolStripMenuItem";
+            this.exibirCargosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exibirCargosToolStripMenuItem.Text = "Exibir Cargos";
+            this.exibirCargosToolStripMenuItem.Click += new System.EventHandler(this.exibirCargosToolStripMenuItem_Click);
             // 
             // pnlPrincipal
             // 
@@ -117,19 +135,19 @@
             this.pnlPrincipal.Size = new System.Drawing.Size(1270, 668);
             this.pnlPrincipal.TabIndex = 1;
             // 
-            // exibirCargosToolStripMenuItem
+            // novoCadastroToolStripMenuItem1
             // 
-            this.exibirCargosToolStripMenuItem.Name = "exibirCargosToolStripMenuItem";
-            this.exibirCargosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.exibirCargosToolStripMenuItem.Text = "Exibir Cargos";
-            this.exibirCargosToolStripMenuItem.Click += new System.EventHandler(this.exibirCargosToolStripMenuItem_Click);
+            this.novoCadastroToolStripMenuItem1.Name = "novoCadastroToolStripMenuItem1";
+            this.novoCadastroToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.novoCadastroToolStripMenuItem1.Text = "Novo Cadastro";
+            this.novoCadastroToolStripMenuItem1.Click += new System.EventHandler(this.novoCadastroToolStripMenuItem1_Click);
             // 
-            // exibirMinistériosToolStripMenuItem
+            // novoCadastroToolStripMenuItem2
             // 
-            this.exibirMinistériosToolStripMenuItem.Name = "exibirMinistériosToolStripMenuItem";
-            this.exibirMinistériosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.exibirMinistériosToolStripMenuItem.Text = "Exibir Ministérios";
-            this.exibirMinistériosToolStripMenuItem.Click += new System.EventHandler(this.exibirMinistériosToolStripMenuItem_Click);
+            this.novoCadastroToolStripMenuItem2.Name = "novoCadastroToolStripMenuItem2";
+            this.novoCadastroToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.novoCadastroToolStripMenuItem2.Text = "Novo Cadastro";
+            this.novoCadastroToolStripMenuItem2.Click += new System.EventHandler(this.novoCadastroToolStripMenuItem2_Click);
             // 
             // form_MenuPrincipal
             // 
@@ -165,5 +183,7 @@
         private System.Windows.Forms.ToolStripMenuItem cargosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exibirCargosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exibirMinistériosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem novoCadastroToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem novoCadastroToolStripMenuItem2;
     }
 }

@@ -43,5 +43,17 @@ namespace IpgaSystem
         {
             showChildForminPanel(new form_ExibirMinisterios());
         }
+
+        private void novoCadastroToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            form_CadastrarCargos formCadastrarCargos = new form_CadastrarCargos();
+            formCadastrarCargos.ShowDialog();
+        }
+
+        private void novoCadastroToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            form_CadastrarMinisterios formCadastrarMinisterios = new form_CadastrarMinisterios();
+            formCadastrarMinisterios.ShowDialog();
+        }
     }
 }

@@ -80,7 +80,7 @@ namespace IpgaSystem.Forms.Cargos
                     }
 
                     context.tb_cargos.Remove(cargo);
-                    context.SaveChanges();
+                    await context.SaveChangesAsync();
 
                     XtraMessageBox.Show("Cargo excluído com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     CarregarTabelaCargos();

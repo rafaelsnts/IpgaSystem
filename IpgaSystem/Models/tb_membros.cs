@@ -61,6 +61,10 @@ public partial class tb_membros
     
     public string mem_estado { get; set; }
 
+    [StringLength(50)]
+
+    public string mem_cep{ get; set; }
+
     [ForeignKey("mem_fk_car_id")]
     [InverseProperty("tb_membros")]
     public virtual tb_cargos mem_fk_car { get; set; }
